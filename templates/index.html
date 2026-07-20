@@ -2,182 +2,203 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart University Assistant | Enquiry Chatbot</title>
-    
-    <!-- Meta SEO Tags -->
-    <meta name="description" content="Official Smart University Assistant Chatbot. Get instant natural language answers regarding admissions, fees, student FAQs, policies, and contacts.">
-    <meta name="keywords" content="University Chatbot, Admissions Help, School Fees Payment, Academic Calendar, Accommodation Registration">
-    <meta name="author" content="University Enquiry Chatbot">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>UniQuery | Smart University Enquiry Chatbot</title>
+
+    <!-- SEO -->
+    <meta name="description" content="UniQuery — A smart, NLP-powered university enquiry chatbot. Get instant answers on admissions, fees, policies, hostels, and more.">
+    <meta name="keywords" content="University Chatbot, Smart Admissions Assistant, NLP Chatbot, University Enquiry, Student FAQs">
+    <meta name="author" content="UniQuery">
+    <meta name="theme-color" content="#C8292E">
+
+    <!-- Open Graph (for sharing) -->
+    <meta property="og:title" content="UniQuery | Smart University Enquiry Chatbot">
+    <meta property="og:description" content="Ask any university question in plain English and get instant, precise answers.">
+    <meta property="og:type" content="website">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Lucide Icons CDN -->
+
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body class="dark-theme">
-    <div class="app-wrapper">
-        <!-- Sidebar Navigation -->
-        <aside class="sidebar" id="appSidebar">
-            <div class="sidebar-header">
-                <div class="brand">
-                    <div class="brand-logo">
-                        <i data-lucide="bot"></i>
-                    </div>
-                    <div class="brand-text">
-                        <h1>UniQuery</h1>
-                        <span>Chatbot</span>
-                    </div>
+<div class="app-wrapper">
+
+    <!-- ==================== SIDEBAR ==================== -->
+    <aside class="sidebar" id="appSidebar" aria-label="Navigation Sidebar">
+
+        <!-- Brand Header -->
+        <div class="sidebar-header">
+            <div class="brand">
+                <div class="brand-logo">
+                    <i data-lucide="bot"></i>
                 </div>
-                <button class="sidebar-close-btn" id="sidebarCloseBtn" aria-label="Close Sidebar">
-                    <i data-lucide="x"></i>
+                <div class="brand-text">
+                    <h1>UniQuery</h1>
+                    <span>Chatbot</span>
+                </div>
+            </div>
+            <button class="sidebar-close-btn" id="sidebarCloseBtn" aria-label="Close sidebar">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+
+        <!-- Assistant Status -->
+        <div class="assistant-status">
+            <div class="avatar-glow">
+                <div class="avatar"><i data-lucide="graduation-cap"></i></div>
+                <span class="status-dot online" aria-label="Online"></span>
+            </div>
+            <div class="status-info">
+                <h2>Academic Assistant</h2>
+                <p>NLP Powered &bull; Online</p>
+            </div>
+        </div>
+
+        <!-- Navigation Categories -->
+        <nav class="sidebar-nav" aria-label="Knowledge categories">
+            <h3>Knowledge Areas</h3>
+            <div class="nav-links">
+                <button class="nav-link-btn" onclick="quickQuestion('1')" aria-label="Admissions">
+                    <span class="icon"><i data-lucide="file-text"></i></span>
+                    <span class="label">Admissions</span>
+                </button>
+                <button class="nav-link-btn" onclick="quickQuestion('2')" aria-label="General Info">
+                    <span class="icon"><i data-lucide="landmark"></i></span>
+                    <span class="label">General Info</span>
+                </button>
+                <button class="nav-link-btn" onclick="quickQuestion('3')" aria-label="Student FAQs">
+                    <span class="icon"><i data-lucide="help-circle"></i></span>
+                    <span class="label">Student FAQs</span>
+                </button>
+                <button class="nav-link-btn" onclick="quickQuestion('4')" aria-label="Fees and Payments">
+                    <span class="icon"><i data-lucide="credit-card"></i></span>
+                    <span class="label">Fees &amp; Payments</span>
+                </button>
+                <button class="nav-link-btn" onclick="quickQuestion('5')" aria-label="Policies">
+                    <span class="icon"><i data-lucide="scroll"></i></span>
+                    <span class="label">Policies</span>
+                </button>
+                <button class="nav-link-btn" onclick="quickQuestion('6')" aria-label="Contact and Help">
+                    <span class="icon"><i data-lucide="phone"></i></span>
+                    <span class="label">Contact &amp; Help</span>
                 </button>
             </div>
+        </nav>
 
-            <!-- Assistant Status -->
-            <div class="assistant-status">
-                <div class="avatar-glow">
-                    <div class="avatar"><i data-lucide="graduation-cap"></i></div>
-                    <span class="status-dot online"></span>
-                </div>
-                <div class="status-info">
-                    <h2>Academic Assistant</h2>
-                    <p>NLP Powered • Online</p>
-                </div>
+        <!-- Quick Topic Search -->
+        <div class="sidebar-search">
+            <h3>Quick Search</h3>
+            <div class="search-box">
+                <span class="search-icon"><i data-lucide="search"></i></span>
+                <input type="text" id="topicSearch" placeholder="Filter topics..." autocomplete="off" aria-label="Search topics">
             </div>
+            <div class="search-results-list" id="searchResultsList" role="listbox"></div>
+        </div>
 
-            <!-- Sidebar Categories -->
-            <nav class="sidebar-nav">
-                <h3>Knowledge Areas</h3>
-                <div class="nav-links">
-                    <button class="nav-link-btn" onclick="quickQuestion('1')">
-                        <span class="icon"><i data-lucide="file-text"></i></span>
-                        <span class="label">Admissions</span>
-                    </button>
-                    <button class="nav-link-btn" onclick="quickQuestion('2')">
-                        <span class="icon"><i data-lucide="landmark"></i></span>
-                        <span class="label">General Info</span>
-                    </button>
-                    <button class="nav-link-btn" onclick="quickQuestion('3')">
-                        <span class="icon"><i data-lucide="help-circle"></i></span>
-                        <span class="label">Student FAQs</span>
-                    </button>
-                    <button class="nav-link-btn" onclick="quickQuestion('4')">
-                        <span class="icon"><i data-lucide="credit-card"></i></span>
-                        <span class="label">Fees & Payments</span>
-                    </button>
-                    <button class="nav-link-btn" onclick="quickQuestion('5')">
-                        <span class="icon"><i data-lucide="scroll"></i></span>
-                        <span class="label">Policies</span>
-                    </button>
-                    <button class="nav-link-btn" onclick="quickQuestion('6')">
-                        <span class="icon"><i data-lucide="phone"></i></span>
-                        <span class="label">Contact & Help</span>
-                    </button>
-                </div>
-            </nav>
-
-            <!-- Search Panel -->
-            <div class="sidebar-search">
-                <h3>Quick Topic Search</h3>
-                <div class="search-box">
-                    <input type="text" id="topicSearch" placeholder="Type to filter topics..." autocomplete="off">
-                    <span class="search-icon"><i data-lucide="search"></i></span>
-                </div>
-                <div class="search-results-list" id="searchResultsList"></div>
+        <!-- Settings Footer -->
+        <div class="sidebar-footer">
+            <h3>Settings</h3>
+            <div class="controls-grid">
+                <button class="control-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle light/dark theme">
+                    <i data-lucide="sun" id="themeIcon"></i>
+                    <span class="btn-text">Light Mode</span>
+                </button>
+                <button class="control-btn" id="soundToggle" title="Toggle sound" aria-label="Toggle sound">
+                    <i data-lucide="volume-2" id="soundIcon"></i>
+                    <span class="btn-text">Sound: On</span>
+                </button>
+                <button class="control-btn secondary-btn" id="exportBtn" title="Export chat" aria-label="Export chat history">
+                    <i data-lucide="download"></i>
+                    <span class="btn-text">Export</span>
+                </button>
+                <button class="control-btn danger-btn" id="clearBtn" title="Clear chat" aria-label="Clear conversation">
+                    <i data-lucide="trash-2"></i>
+                    <span class="btn-text">Clear</span>
+                </button>
             </div>
+        </div>
+    </aside>
 
-            <!-- Sidebar Footer Controls -->
-            <div class="sidebar-footer">
-                <h3>Settings</h3>
-                <div class="controls-grid">
-                    <button class="control-btn" id="themeToggle" title="Toggle Light/Dark Theme">
-                        <i data-lucide="sun" id="themeIcon"></i>
-                        <span class="btn-text">Light Theme</span>
-                    </button>
-                    <button class="control-btn" id="soundToggle" title="Toggle Sound Effects">
-                        <i data-lucide="volume-2" id="soundIcon"></i>
-                        <span class="btn-text">Sound: On</span>
-                    </button>
-                    <button class="control-btn secondary-btn" id="exportBtn" title="Export Chat History">
-                        <i data-lucide="download"></i>
-                        <span class="btn-text">Export Chat</span>
-                    </button>
-                    <button class="control-btn danger-btn" id="clearBtn" title="Clear Conversation">
-                        <i data-lucide="trash-2"></i>
-                        <span class="btn-text">Clear Chat</span>
-                    </button>
-                </div>
-            </div>
-        </aside>
+    <!-- Sidebar backdrop overlay (mobile) -->
+    <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
 
-        <!-- Main Chat Area -->
-        <main class="chat-main">
-            <!-- Top Header Bar -->
-            <header class="chat-header">
-                <div class="header-left">
-                    <button class="sidebar-toggle-btn" id="sidebarToggleBtn" aria-label="Open Sidebar">
-                        <i data-lucide="menu"></i>
-                    </button>
-                    <div class="header-title">
-                        <h2>University Enquiry Portal</h2>
-                        <div class="header-subtitle">
-                            <span class="status-indicator"></span>
-                            <p>Knowledge Base Live • 46 Articles Indexed</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-right">
-                    <div class="school-seal">
-                        <i data-lucide="school"></i>
-                    </div>
-                </div>
-            </header>
+    <!-- ==================== MAIN AREA ==================== -->
+    <main class="chat-main" role="main">
 
-            <!-- Chat Message Thread -->
-            <div class="chat-messages-container">
-                <div class="chat-messages" id="chatMessages">
-                    <div class="message bot">
-                        <div class="message-content">
-                            Welcome to the <b>University Enquiry Portal</b>! 👋<br><br>
-                            I am your smart assistant, powered by natural language processing. Ask me any question in plain English, and I will search our official documentation to give you a direct, precise answer.<br><br>
-                            <b>To get started, select a category below or type your question:</b>
-                        </div>
+        <!-- Top Header -->
+        <header class="chat-header">
+            <div class="header-left">
+                <button class="sidebar-toggle-btn" id="sidebarToggleBtn" aria-label="Open navigation sidebar">
+                    <i data-lucide="menu"></i>
+                </button>
+                <div class="header-title">
+                    <h2>University Enquiry Portal</h2>
+                    <div class="header-subtitle">
+                        <span class="status-indicator" aria-hidden="true"></span>
+                        <p>Knowledge Base Live &bull; 61 Articles Indexed</p>
                     </div>
                 </div>
             </div>
-
-            <!-- Suggestion / Quick Chips Area -->
-            <div class="suggestion-chips-container">
-                <div class="suggestion-title">Suggested Topics:</div>
-                <div class="suggestion-chips" id="suggestionChips">
-                    <button class="chip" onclick="quickQuestion('What are the requirements for Computer Science?')">CS Requirements</button>
-                    <button class="chip" onclick="quickQuestion('How do I apply?')">How to Apply</button>
-                    <button class="chip" onclick="quickQuestion('How much is the hostel fee?')">Hostel Cost</button>
-                    <button class="chip" onclick="quickQuestion('When does the semester start?')">Resumption Date</button>
-                    <button class="chip" onclick="quickQuestion('What is the attendance policy?')">Attendance Rules</button>
+            <div class="header-right">
+                <div class="school-seal" aria-hidden="true">
+                    <i data-lucide="school"></i>
                 </div>
             </div>
+        </header>
 
-            <!-- Input Controls Panel -->
-            <footer class="chat-input-panel">
-                <div class="input-wrapper">
-                    <input type="text" id="userInput" placeholder="Ask a question (e.g. 'How much is tuition for cyber security?')..." autocomplete="off" maxlength="150">
-                    <div class="char-counter" id="charCounter">0/150</div>
-                    <button id="sendBtn" class="send-btn" aria-label="Send Message">
-                        <i data-lucide="send-horizontal"></i>
-                    </button>
+        <!-- Messages -->
+        <div class="chat-messages-container" id="chatContainer" role="log" aria-live="polite" aria-label="Conversation">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    <div class="message-content">
+                        Welcome to the <b>University Enquiry Portal</b>! 👋<br><br>
+                        I'm your smart assistant powered by natural language processing. Ask me any question in plain English — I'll search the official knowledge base and give you a direct, precise answer.<br><br>
+                        <b>Try asking:</b> <i>"How do I apply?"</i>, <i>"How much is tuition for nursing?"</i>, <i>"When does school resume?"</i>
+                    </div>
                 </div>
-            </footer>
-        </main>
-    </div>
+            </div>
+        </div>
 
-    <!-- Script File -->
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+        <!-- Quick Topic Chips -->
+        <div class="suggestion-chips-container">
+            <div class="suggestion-title">Quick Topics</div>
+            <div class="suggestion-chips" id="suggestionChips" role="list">
+                <button class="chip" onclick="quickQuestion('What are the requirements for Computer Science?')" role="listitem">CS Requirements</button>
+                <button class="chip" onclick="quickQuestion('How do I apply?')" role="listitem">How to Apply</button>
+                <button class="chip" onclick="quickQuestion('How much is the hostel fee?')" role="listitem">Hostel Cost</button>
+                <button class="chip" onclick="quickQuestion('When does the semester start?')" role="listitem">Resumption Date</button>
+                <button class="chip" onclick="quickQuestion('Are there any scholarships?')" role="listitem">Scholarships</button>
+                <button class="chip" onclick="quickQuestion('What is the CGPA grading scale?')" role="listitem">GPA / CGPA</button>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <footer class="chat-input-panel">
+            <div class="input-wrapper">
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Ask anything about admissions, fees, policies..."
+                    autocomplete="off"
+                    maxlength="200"
+                    aria-label="Type your question"
+                    enterkeyhint="send"
+                >
+                <div class="char-counter" id="charCounter" aria-live="polite">0/200</div>
+                <button id="sendBtn" class="send-btn" aria-label="Send message">
+                    <i data-lucide="send-horizontal"></i>
+                </button>
+            </div>
+        </footer>
+    </main>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

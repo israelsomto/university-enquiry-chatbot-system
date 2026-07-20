@@ -738,5 +738,313 @@ If you have an issue that was not resolved at the front desk, please follow this
 3. <b>Level 3 (Dean of Faculty):</b> If still unresolved after 5 working days, escalate the issue to the Dean of your Faculty.<br>
 4. <b>Final Appeal (Registrar/Vice-Chancellor):</b> For critical or disciplinary issues, submit a formal petition to the Registrar's Office.""",
         "follow_ups": ["I need help with a problem / office contacts", "How can I contact the university?", "What are the office hours?"]
+    },
+
+    # ==================== NEW TOPICS ====================
+    {
+        "id": "faq_scholarships_bursaries",
+        "category": "fees_payments",
+        "question": "Are there scholarships or bursaries available?",
+        "keywords": ["scholarship", "bursary", "financial aid", "merit scholarship", "need based aid"],
+        "answer": """<b>🏆 SCHOLARSHIPS & BURSARIES:</b><br><br>
+The university offers several financial support options for deserving students:<br><br>
+• <b>Vice-Chancellor's Merit Scholarship:</b> Awarded annually to the top 5 students per faculty based on CGPA (minimum 4.50/5.00). Covers up to 50% of tuition.<br>
+• <b>Need-Based Bursary:</b> Available to students from low-income households. Applicants must submit a means test form and supporting documents to Student Affairs.<br>
+• <b>Departmental Excellence Awards:</b> Each department awards a one-time grant of ₦100,000 to the best-graduating student annually.<br>
+• <b>External/Government Scholarships:</b> Students are encouraged to apply for TETFUND, State Government, and other external scholarship bodies. The Student Affairs Office maintains an updated list of open scholarship applications.<br><br>
+<b>How to Apply:</b> Visit the Student Affairs Office (Block B, 2nd Floor) or download the scholarship form from the student portal under 'Financial Aid'.<br>
+<i>Note: Scholarship slots are limited and competitive. Applications are reviewed each new academic session.</i>""",
+        "follow_ups": ["What are the payment deadlines and options?", "What are the payment procedures?", "What other fees/charges are there?"]
+    },
+    {
+        "id": "faq_siwes_internship",
+        "category": "student_faqs",
+        "question": "How does the SIWES / internship program work?",
+        "keywords": ["siwes", "internship", "industrial training", "it placement", "student work experience"],
+        "answer": """<b>🏭 SIWES / INDUSTRIAL TRAINING (IT) PROGRAM:</b><br><br>
+The Students' Industrial Work Experience Scheme (SIWES) is a mandatory component for Science and Engineering students:<br><br>
+• <b>Who It Applies To:</b> All students in Science, Engineering, and Technology (SET) programs are required to complete SIWES.<br>
+• <b>Duration:</b> Typically 6 months (for 5-year programs) or 3 months (for 4-year programs), usually in the 3rd or 4th year.<br>
+• <b>Process:</b><br>
+  1. Register for SIWES through the Industrial Training Coordinating Unit (ITCU) before the semester deadline.<br>
+  2. Secure an approved placement with a recognized company or government agency.<br>
+  3. Collect your SIWES letter of introduction from the ITCU.<br>
+  4. Maintain a daily logbook, which must be signed by your industry supervisor.<br>
+  5. Submit your completed logbook and a technical report to the ITCU at the end of the placement.<br>
+• <b>Assessment:</b> Students are graded on their logbook, employer's evaluation report, and a final presentation to their department.<br>
+• <b>Contact:</b> ITCU Office — Block D, Ground Floor | itcu@university.edu | +1 (555) 555-0201""",
+        "follow_ups": ["What are the graduation requirements?", "What is the attendance policy?", "I need help with a problem / office contacts"]
+    },
+    {
+        "id": "faq_health_services",
+        "category": "student_faqs",
+        "question": "What health services are available on campus?",
+        "keywords": ["health services", "clinic", "university clinic", "sick bay", "medical centre", "campus health"],
+        "answer": """<b>🏥 STUDENT HEALTH SERVICES / UNIVERSITY CLINIC:</b><br><br>
+The University Health Centre provides basic and specialist medical care to all registered students:<br><br>
+• <b>Location:</b> Health Centre Building, behind the Sports Complex.<br>
+• <b>Operating Hours:</b> Monday – Friday: 8:00 AM – 8:00 PM | Saturday: 9:00 AM – 2:00 PM | 24-hour emergency line available.<br>
+• <b>Services Offered:</b><br>
+  – General consultations and outpatient treatment.<br>
+  – Dispensary (free basic medications for enrolled students).<br>
+  – Family planning and sexual health advisory.<br>
+  – Mental health counselling and psychological support.<br>
+  – Referral letters to teaching hospitals for specialist care.<br>
+• <b>Medical Insurance:</b> All students pay a compulsory Medical Insurance levy of ₦40,000/year which covers basic consultations and outpatient medication at the Health Centre.<br>
+• <b>Emergency:</b> Call the 24-hour emergency line at +1 (555) 555-0911 for urgent medical situations on campus.<br>
+• <b>Sick Leave:</b> Medical certificates from the University Health Centre are the only accepted documents for academic absenteeism excusals.""",
+        "follow_ups": ["What other fees/charges are there?", "What is the attendance policy?", "I need help with a problem / office contacts"]
+    },
+    {
+        "id": "faq_lost_id_card",
+        "category": "student_faqs",
+        "question": "What do I do if I lose my student ID card?",
+        "keywords": ["lost id card", "missing student card", "replace id card", "id card replacement", "lost student card"],
+        "answer": """<b>🪪 LOST / DAMAGED STUDENT ID CARD PROCEDURE:</b><br><br>
+If your student ID card is lost, stolen, or damaged, follow these steps immediately:<br><br>
+1. <b>Report the Loss:</b> Visit the Campus Security Office (Main Gate) and complete a Loss Report Form. Retain a copy of the stamped form.<br>
+2. <b>Visit the ICT/Student Records Unit:</b> Proceed to the ICT Support Centre (Block B, 2nd Floor) with the following:<br>
+   – Stamped Security Loss Report Form<br>
+   – A completed ID Card Replacement Request Form (available at the front desk)<br>
+   – Proof of payment of the ID replacement fee<br>
+3. <b>Replacement Fee:</b> ₦5,000 (non-refundable). Payment is made via the student portal under 'Miscellaneous Payments'.<br>
+4. <b>Processing Time:</b> 3 – 5 working days.<br>
+5. <b>Temporary Pass:</b> A temporary campus access pass will be issued to you while your new card is being processed.<br><br>
+<i>⚠️ Note: Your student ID card must be worn visibly on campus at all times. Operating without an ID card after 5 working days of loss reporting is a disciplinary offense.</i>""",
+        "follow_ups": ["What is the dress code?", "What are the examination rules?", "I need help with a problem / office contacts"]
+    },
+    {
+        "id": "adm_requirements_cyber_compeng",
+        "category": "admissions",
+        "question": "What are the admission requirements for Cybersecurity or Computer Engineering?",
+        "keywords": ["cybersecurity requirements", "computer engineering requirements", "cyber security admission", "compeng admission"],
+        "answer": """<b>🔒 CYBERSECURITY & COMPUTER ENGINEERING ADMISSION REQUIREMENTS:</b><br><br>
+<b>Cybersecurity (Faculty of Science):</b><br>
+• <b>O'Level:</b> Minimum 5 credits at WAEC/NECO/NABTEB — must include Mathematics, English Language, and Physics.<br>
+• <b>JAMB/UTME Score:</b> Minimum cut-off score of 200.<br>
+• <b>JAMB Subject Combination:</b> Mathematics, Physics, Chemistry/Biology/Economics/Geography.<br>
+• <b>Post-UTME:</b> Candidates must pass the university's aptitude test and technical interview.<br><br>
+<b>Computer Engineering (Faculty of Engineering):</b><br>
+• <b>O'Level:</b> Minimum 5 credits — must include Mathematics, English Language, Physics, and Chemistry.<br>
+• <b>JAMB/UTME Score:</b> Minimum cut-off score of 200.<br>
+• <b>JAMB Subject Combination:</b> Mathematics, Physics, Chemistry.<br>
+• <b>Direct Entry:</b> ND (Upper Credit) or A-Level passes in Mathematics and Physics are accepted for 200-level entry.<br>
+• <b>Post-UTME:</b> Candidates must pass the university's entrance examination.<br><br>
+<i>Both programs are accredited by NUC and have a duration of 4–5 years.</i>""",
+        "follow_ups": ["What are the requirements for Computer Science?", "How do I apply?", "What are the fees for science courses?"]
+    },
+    {
+        "id": "adm_mba_postgraduate",
+        "category": "admissions",
+        "question": "What are the MBA or postgraduate admission requirements?",
+        "keywords": ["mba admission", "postgraduate admission", "masters requirements", "msc admission", "pgd admission"],
+        "answer": """<b>🎓 MBA / POSTGRADUATE ADMISSION REQUIREMENTS:</b><br><br>
+<b>General Requirements (All Postgraduate Programs):</b><br>
+• A first degree (B.Sc, B.Eng, B.A, etc.) from a recognized university with a minimum CGPA of <b>2.50/5.00</b> (Second Class Lower).<br>
+• Five O'Level credits (WAEC/NECO) including Mathematics and English Language.<br>
+• NYSC Discharge Certificate or Exemption Letter.<br>
+• Two academic/professional reference letters.<br><br>
+<b>MBA Specific Requirements:</b><br>
+• A bachelor's degree in any discipline (Second Class Lower minimum).<br>
+• Minimum of 2 years relevant post-graduation work experience.<br>
+• A statement of purpose (SOP) detailing your leadership goals and career ambitions.<br>
+• Valid GMAT/GRE score (recommended, not strictly mandatory).<br><br>
+<b>M.Sc Programs (Science/Engineering):</b><br>
+• First degree in a relevant discipline with Second Class Lower (2.50 CGPA) minimum.<br>
+• A completed research proposal submitted with the application.<br><br>
+<b>How to Apply:</b> Submit your application online via the Postgraduate School portal at pg.university.edu. Application fee: ₦10,000.<br>
+<b>Contact:</b> School of Postgraduate Studies — Block A, 3rd Floor | pg@university.edu""",
+        "follow_ups": ["What are the postgraduate/MBA fees?", "How do I apply?", "What documents do I need?"]
+    },
+    {
+        "id": "faq_portal_login_issues",
+        "category": "student_faqs",
+        "question": "I can't log in to the student portal — what do I do?",
+        "keywords": ["portal login issues", "student portal login", "cant login portal", "portal password reset", "portal not working"],
+        "answer": """<b>💻 STUDENT PORTAL LOGIN TROUBLESHOOTING:</b><br><br>
+If you are unable to log in to the student portal, try the following steps:<br><br>
+1. <b>Check Credentials:</b> Your default username is your <b>Student Matriculation Number</b> and your default password is your <b>date of birth</b> in DDMMYYYY format (e.g., 15091999).<br>
+2. <b>Reset Password:</b> Click <b>'Forgot Password'</b> on the login page. A reset link will be sent to your registered university email address.<br>
+3. <b>Clear Browser Cache:</b> Try clearing your browser cache and cookies, or use a different browser (Chrome or Firefox recommended).<br>
+4. <b>Check Internet Connection:</b> Ensure you have a stable internet connection. The portal is also accessible on the campus Wi-Fi network.<br>
+5. <b>Account Not Activated:</b> New students must activate their portal account using the activation code on their admission letter. Visit the ICT Centre if you do not have an activation code.<br>
+6. <b>Still Unable to Login?</b> Contact the ICT Support Centre directly:<br>
+   – Walk-in: Block B, 2nd Floor<br>
+   – Email: ict@university.edu<br>
+   – Phone: +1 (555) 555-0199<br>
+   – Hours: Monday – Friday, 9:00 AM – 5:00 PM""",
+        "follow_ups": ["I need help with a problem / office contacts", "How can I contact the university?", "What are the office hours?"]
+    },
+    {
+        "id": "faq_wifi_campus_internet",
+        "category": "student_faqs",
+        "question": "How do I connect to campus Wi-Fi?",
+        "keywords": ["wifi", "campus internet", "campus wifi", "connect internet", "wi-fi access"],
+        "answer": """<b>📶 CAMPUS WI-FI / INTERNET ACCESS:</b><br><br>
+The university provides free high-speed Wi-Fi throughout all academic, residential, and administrative buildings:<br><br>
+• <b>Network Name (SSID):</b> <b>UniConnect_Student</b><br>
+• <b>How to Connect:</b><br>
+  1. Select <b>UniConnect_Student</b> from your device's Wi-Fi settings.<br>
+  2. Open your browser — you will be redirected to the captive portal login page.<br>
+  3. Log in using your <b>Student Matriculation Number</b> and <b>portal password</b>.<br>
+  4. Accept the acceptable use policy to gain access.<br>
+• <b>Coverage Areas:</b> All lecture halls, libraries, hostels, the health centre, cafeteria, and administrative blocks.<br>
+• <b>Data Policy:</b> Each student is allocated a daily bandwidth of <b>5 GB</b>. Unlimited access is available in the e-Library zone.<br>
+• <b>Prohibited Uses:</b> Streaming pirated content, torrenting, hacking, or any illegal activity on the university network is strictly prohibited and will result in account suspension.<br>
+• <b>Technical Issues:</b> Contact the ICT Support Centre at ict@university.edu or call +1 (555) 555-0199.""",
+        "follow_ups": ["I can't log in to the student portal — what do I do?", "I need help with a problem / office contacts", "What other fees/charges are there?"]
+    },
+    {
+        "id": "faq_clubs_associations",
+        "category": "student_faqs",
+        "question": "What student clubs and associations are available?",
+        "keywords": ["student clubs", "student associations", "extracurricular", "student union", "societies"],
+        "answer": """<b>🎭 STUDENT CLUBS & ASSOCIATIONS:</b><br><br>
+The university has a vibrant student life with over 40 registered clubs and associations:<br><br>
+• <b>Academic Associations:</b><br>
+  – Computer Science Students Association (CSSA)<br>
+  – Engineering Students Society (ESS)<br>
+  – Nursing Students Association (NSA)<br>
+  – Business and Management Students Association (BMSA)<br>
+• <b>Technology & Innovation:</b><br>
+  – Robotics & AI Club<br>
+  – Google Developer Student Club (GDSC)<br>
+  – Cybersecurity & Ethical Hacking Society<br>
+• <b>Arts, Culture & Media:</b><br>
+  – Drama & Performing Arts Club<br>
+  – Debate & Public Speaking Society<br>
+  – University Press & Media Unit<br>
+• <b>Sports Clubs:</b> Football, Basketball, Athletics, Table Tennis, Swimming, and more.<br>
+• <b>Community Service:</b><br>
+  – Red Cross Student Unit<br>
+  – Environmental Sustainability Club<br>
+  – UniCares Volunteer Network<br><br>
+<b>How to Join:</b> Attend the Clubs & Societies Fair held at the start of each academic session, or visit the Student Affairs Office (Block B, 2nd Floor) to register for a club.<br>
+<b>Start a New Club:</b> Submit a constitution and list of 20 founding members to the Student Affairs Office for approval.""",
+        "follow_ups": ["How do I apply for accommodation?", "I need help with a problem / office contacts", "What are the graduation requirements?"]
+    },
+    {
+        "id": "faq_study_abroad",
+        "category": "student_faqs",
+        "question": "Are there study abroad or exchange programs?",
+        "keywords": ["study abroad", "exchange program", "international student exchange", "semester abroad", "overseas study"],
+        "answer": """<b>✈️ STUDY ABROAD & STUDENT EXCHANGE PROGRAMS:</b><br><br>
+The university has active partnerships with institutions in Europe, North America, and Asia:<br><br>
+• <b>Eligible Students:</b> Students in their 2nd or 3rd year with a minimum CGPA of <b>3.50/5.00</b> and no outstanding disciplinary records.<br>
+• <b>Program Duration:</b> One semester (typically 4–6 months) at a partner university abroad.<br>
+• <b>Partner Universities Include:</b> Universities in the UK, Germany, Canada, and South Africa (contact International Relations Office for the current list).<br>
+• <b>What Is Covered:</b> Tuition at the partner institution is waived under bilateral agreements. Students are responsible for visa fees, flight costs, and personal upkeep.<br>
+• <b>Credit Transfer:</b> Grades earned abroad are converted and credited to your local academic record upon return.<br>
+• <b>Application Process:</b><br>
+  1. Obtain the study abroad application form from the International Relations Office.<br>
+  2. Submit a personal statement, two references, and your academic transcript.<br>
+  3. Attend an interview with the International Relations Committee.<br>
+  4. If selected, receive your nomination letter and apply to the partner institution directly.<br>
+• <b>Contact:</b> International Relations Office — Block A, 2nd Floor | intl@university.edu | +1 (555) 555-0205""",
+        "follow_ups": ["What are the graduation requirements?", "Can I defer my admission?", "I need help with a problem / office contacts"]
+    },
+    {
+        "id": "faq_transcript_request",
+        "category": "student_faqs",
+        "question": "How do I request my academic transcript?",
+        "keywords": ["transcript request", "official transcript", "academic transcript", "request transcript", "get transcript"],
+        "answer": """<b>📄 ACADEMIC TRANSCRIPT REQUEST PROCEDURE:</b><br><br>
+An official transcript is a certified record of all your academic results. Here's how to request one:<br><br>
+<b>For Current Students:</b><br>
+1. Log in to the Student Portal and navigate to <b>'Registrar Services'</b> → <b>'Transcript Request'</b>.<br>
+2. Fill in the Transcript Request Form and specify the purpose (e.g., further studies, employment).<br>
+3. Pay the transcript processing fee:<br>
+   – <b>Soft copy (PDF):</b> ₦5,000 per copy.<br>
+   – <b>Hard copy (sealed & stamped):</b> ₦10,000 per copy.<br>
+   – <b>International courier (hard copy):</b> ₦25,000 (inclusive of DHL/courier charges).<br>
+4. Upload proof of payment on the portal.<br>
+5. Your transcript will be processed and ready within <b>5 – 10 working days</b>.<br><br>
+<b>For Alumni:</b> Visit the Registrar's Office in person or send a formal email request to registrar@university.edu with your full name, matriculation number, and year of graduation.<br><br>
+<b>Contact:</b> Registrar's Office — Block A, 1st Floor | registrar@university.edu | +1 (555) 555-0188""",
+        "follow_ups": ["What is the escalation process?", "How can I contact the university?", "How do I collect my certificate?"]
+    },
+    {
+        "id": "faq_certificate_collection",
+        "category": "student_faqs",
+        "question": "How do I collect my degree certificate after graduation?",
+        "keywords": ["certificate collection", "collect degree", "graduation certificate", "degree certificate", "collect result"],
+        "answer": """<b>🎓 DEGREE CERTIFICATE COLLECTION PROCEDURE:</b><br><br>
+After successfully completing all graduation requirements, your certificate will be issued as follows:<br><br>
+• <b>Convocation Ceremony:</b> Certificates are officially presented at the annual Convocation Ceremony. All graduating students are expected to attend in full academic gown.<br>
+• <b>When to Collect:</b> Certificates are available for collection starting 2 weeks after the Convocation Ceremony date.<br>
+• <b>How to Collect:</b><br>
+  1. Confirm your name on the graduation clearance list via the student portal.<br>
+  2. Obtain a clearance form from the Registrar's Office (must be signed by Bursary, Library, Hostel, and your HOD confirming no outstanding obligations).<br>
+  3. Present a valid photo ID and your student portal printout at the Registrar's Office.<br>
+  4. Sign the certificate receipt register to collect your original certificate.<br>
+• <b>Third-Party Collection:</b> If you cannot collect in person, provide a notarized authorization letter and a photocopy of your ID for a designated representative.<br>
+• <b>Certificate Replacement (Lost):</b> ₦50,000 replacement fee applies. A police report of loss is required.<br>
+• <b>Contact:</b> Registrar's Office — Block A, 1st Floor | registrar@university.edu""",
+        "follow_ups": ["How do I request my academic transcript?", "What are the graduation requirements?", "I need help with a problem / office contacts"]
+    },
+    {
+        "id": "pol_supplementary_exams",
+        "category": "policies",
+        "question": "What is the policy on supplementary exams or retakes?",
+        "keywords": ["supplementary exam", "retake exam", "carry over", "carryover", "failed course", "rewrite exam"],
+        "answer": """<b>📝 SUPPLEMENTARY EXAMINATION & RETAKE POLICY:</b><br><br>
+• <b>Who Qualifies:</b> Students who score below the minimum pass mark (40%) in a course are required to retake that course.<br>
+• <b>Supplementary Examination:</b> A supplementary (sup) exam is offered for students who fail a course with a score between <b>30% and 39%</b> only. Students with scores below 30% must retake the full course the following session.<br>
+• <b>Supplementary Exam Window:</b> Held within 4 weeks after the release of main semester results. Students must register and pay a supplementary exam fee of <b>₦15,000 per course</b>.<br>
+• <b>Maximum Score on Supplementary:</b> A student who passes a supplementary exam is awarded a maximum grade of <b>C (50%)</b>, regardless of the score obtained in the supplementary exam.<br>
+• <b>Maximum Retake Attempts:</b> A student may not attempt a course more than <b>3 times</b>. Failure to pass after 3 attempts leads to a referral to the Faculty Academic Board.<br>
+• <b>Carryover Limit:</b> Students carrying over more than 50% of a level's course units will be required to <b>repeat the level</b> entirely.<br>
+• <b>Registration:</b> Apply for supplementary exams via the Student Portal under 'Examinations' → 'Supplementary Registration'.""",
+        "follow_ups": ["What are the examination rules?", "What is the attendance policy?", "What are the academic probation/suspension rules?"]
+    },
+    {
+        "id": "pol_cgpa_grading",
+        "category": "policies",
+        "question": "How is the CGPA calculated and what is the grading scale?",
+        "keywords": ["cgpa calculation", "gpa calculation", "grading scale", "grade point", "how cgpa is calculated", "grading system"],
+        "answer": """<b>📊 CGPA CALCULATION & GRADING SCALE:</b><br><br>
+The university operates on a <b>5-point grading scale</b> in line with NUC guidelines:<br><br>
+<b>Grading Scale:</b><br>
+• <b>A (70% – 100%):</b> 5.00 Grade Points — Excellent<br>
+• <b>B (60% – 69%):</b> 4.00 Grade Points — Very Good<br>
+• <b>C (50% – 59%):</b> 3.00 Grade Points — Good<br>
+• <b>D (45% – 49%):</b> 2.00 Grade Points — Pass<br>
+• <b>E (40% – 44%):</b> 1.00 Grade Point — Marginal Pass<br>
+• <b>F (0% – 39%):</b> 0.00 Grade Points — Fail<br><br>
+<b>GPA Calculation (per semester):</b><br>
+GPA = Σ (Credit Units × Grade Points) ÷ Total Credit Units registered<br><br>
+<b>CGPA Calculation:</b><br>
+CGPA = Σ (All weighted grade points from all semesters) ÷ Total cumulative credit units<br><br>
+<b>Degree Classification:</b><br>
+• <b>First Class:</b> CGPA 4.50 – 5.00<br>
+• <b>Second Class Upper:</b> CGPA 3.50 – 4.49<br>
+• <b>Second Class Lower:</b> CGPA 2.50 – 3.49<br>
+• <b>Third Class:</b> CGPA 1.50 – 2.49<br>
+• <b>Pass:</b> CGPA 1.00 – 1.49<br>
+• <b>Fail:</b> CGPA below 1.00<br><br>
+<i>Your current CGPA is always visible on your Student Portal dashboard under 'Academic Records'.</i>""",
+        "follow_ups": ["When are results released?", "What are the academic probation/suspension rules?", "What are the graduation requirements?"]
+    },
+    {
+        "id": "pol_academic_probation",
+        "category": "policies",
+        "question": "What are the academic probation and suspension rules?",
+        "keywords": ["academic probation", "academic suspension", "probation rules", "suspension rules", "low cgpa consequences"],
+        "answer": """<b>⚠️ ACADEMIC PROBATION & SUSPENSION POLICY:</b><br><br>
+The university enforces strict academic standing requirements to ensure student progress:<br><br>
+<b>Academic Probation:</b><br>
+• A student is placed on <b>Academic Probation</b> if their semester GPA falls below <b>1.00</b> or their CGPA drops below <b>1.50</b>.<br>
+• Students on probation are notified in writing by the Registrar within 2 weeks of result publication.<br>
+• A student on probation is assigned a <b>Faculty Academic Adviser</b> who must approve their course registration for the next semester.<br>
+• Students on probation may be limited to a reduced course load (maximum of 15 credit units per semester).<br><br>
+<b>Academic Suspension:</b><br>
+• A student placed on probation who <b>fails to improve</b> their GPA in the following semester is recommended for <b>Academic Suspension</b>.<br>
+• Suspension duration: <b>One full academic session</b> (2 semesters). During this period, the student may not attend lectures or write exams.<br>
+• A suspended student must write a formal appeal letter to the Faculty Academic Board before being allowed to return.<br><br>
+<b>Withdrawal / Rustication:</b><br>
+• A student suspended twice or who accumulates excessive failed courses may be permanently <b>withdrawn</b> from the university.<br>
+• This decision is made solely by the Senate Academic Committee.<br><br>
+<i>Students facing academic difficulties are strongly encouraged to consult their departmental Academic Adviser as early as possible.</i>""",
+        "follow_ups": ["How is the CGPA calculated and what is the grading scale?", "What is the policy on supplementary exams or retakes?", "What are the graduation requirements?"]
     }
 ]
